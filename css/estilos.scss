@@ -26,7 +26,7 @@ header{
     .titulo{
         color: #F9E547;
         text-align: center;
-        font-size: 80px;
+        font-size: 60px;
         font-family: 'Orbitron', sans-serif;
     }
 }
@@ -62,11 +62,11 @@ aside{
 
 }
 .pie{
-    padding: 14px 20px 0px 20px;
+    padding: 14px 5px 0px 5px;
     .pie__tabla{
         color: white; 
     	font-family:'Open Sans Condensed', sans-serif;
-	    font-size: 20px;
+	    font-size: 18px;
 	    font-weight: bolder;
     }
 }
@@ -226,6 +226,13 @@ aside{
     }
     .accesorios4, .preta4, .alta4{
         grid-column: 3 / 5;
+    }
+}
+
+@media only screen and (min-width: 360px){
+    .accesorios, .preta, .alta{
+        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-rows: 60px 60px 60px;
     }
 }
 
