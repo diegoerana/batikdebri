@@ -27,49 +27,85 @@
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
 				<a class="nav-item nav-link active menu__links" href="../index.html">Home</a>
-	   			<a class="nav-item nav-link menu__links" href="otoño.html">Otoño-Invierno</a>
-	   			<a class="nav-item nav-link menu__links" href="pret.html">Pret-a-Porter</a>
-	  			<a class="nav-item nav-link menu__links" href="accesorios.html">Accesorios</a>
-	   			<a class="nav-item nav-link menu__links" href="haute.html">Haute-Couture</a>
+	   			<a class="nav-item nav-link menu__links" href="armario.html">Nuestro-Armario</a>
+	  			<a class="nav-item nav-link menu__links" href="tecnicas.html">Técnicas</a>
+	   			<a class="nav-item nav-link menu__links" href="gift.html">Gift-Card</a>
+				<a class="nav-item nav-link menu__links" href="contact.html">Contacto</a>
 	   			<audio class="center-block" src="../audio/Monkey Warhol - Lunar Phases.mp3" controls="1" loop="1"></audio>
 			 </div>
 		</div>
 	</nav>
-<br>
-<form class="formulario">
-	<fieldset>
-		<legend class="formulario__borde" align="center">Formulario de Contacto</legend>
-			<p class="formulario__borde__item">
-				<label form="Nombre">Nombres y Apellido</label>
-				<input type="text" name="Nombre">
-			</p>
-			<p class="formulario__borde__item">
-				<label form="email">Email</label>
-				<input type="email" name="email">
-			</p>
-			<p class="formulario__borde__item">
-				<label>Estado civil</label>
-				<select name="estado civil">
-					<option value="S">Soltero</option>
-					<option value="C">Casado</option>
-					<option value="D">Divorciado</option>
-					<option value="V">Viudo</option>
-				</select>
-			</p>
-			<p class="formulario__borde__item">
-				<label>¿Querés recibir nuestras novedades y ofertas?</label>
-				<input type="checkbox" name="acepta" value="1">
-			</p>
-			<p class="formulario__borde__item">
-				<p class="formulario__borde__item">Dejá tu consulta o comentario aquí. ↓↓↓</p>
-				<textarea name="texarea" id="" cols="40" rows="10"></textarea>
-			</p>
-			<p class="formulario__borde__item">
-				<input type="submit">
-				<input type="reset">
-			</p>
-	</fieldset>
-</form>
-	
+<br>	
+	<div class="containerF">
+		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.679747739
+		775!2d-58.36777888476543!3d-34.78883668041183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2
+		!1s0x95a32cc97bf001a9%3A0x386c9536e6e978ec!2sLuis%20Piedra%20Buena%203075%2C%20B1845CUL%20Jos
+		%C3%A9%20Marmol%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1622757743530!5m2!
+		1ses-419!2sar" width="450" height="550" style="border: 1;" allowfullscreen="1" loading="lazy"></iframe>
+		<form class="formulario">
+			<fieldset>
+				<legend class="formulario__borde" align="center">Formulario de Contacto</legend>
+					<p class="formulario__borde__item">
+						<label form="Nombre">Nombres y Apellido</label>
+						<input class="form-control" type="text" name="Nombre">
+					</p>
+					<p class="formulario__borde__item">
+						<label form="email">Email</label>
+						<input class="form-control" type="email" name="email">
+					</p>
+					<p class="formulario__borde__item">
+						<label>¿Como nos conociste?</label>
+						<select class="form-control" name="Información">
+							<option value="R">Recomendación</option>
+							<option value="S">Redes Sociales</option>
+							<option value="T">Publicidad en Tv</option>
+							<option value="M">Algún medio gráfico</option>
+						</select>
+					</p>
+					<p class="formulario__borde__item">
+						<label>¿Querés recibir nuestras novedades y ofertas?</label>
+						<input type="checkbox" name="acepta" value="1">
+					</p>
+					<p class="formulario__borde__item">
+						<p class="formulario__borde__item">Dejá tu consulta o comentario aquí. ↓↓↓</p>
+						<textarea name="texarea" id="" cols="40" rows="4"></textarea>
+					</p>
+					<p class="formulario__borde__item__botones">
+						<input class="btn btn-dark" type="submit">
+						<input class="btn btn-dark" type="reset">
+					</p>
+			</fieldset>
+		</form>
+	</div>
+	<footer class="footer">
+		<div class="accesos">
+			<ul class="accesos__titulo" id="foot"><h3>Accesos Rapidos</h3>
+				<a id="foot__1" href="otoño.html"><li id="foot__2">Temporada Otoño Invierno</li></a>
+				<a id="foot__1" href="armario.html"><li id="foot__2">Nuestro Armario</li></a>
+				<a id="foot__1" href="tecnicas.html"><li id="foot__2">Técnicas</li></a>
+				<a id="foot__1" href="contact.html"><li id="foot__2">Contacto</li></a>
+			</ul>	
+		</div>
+		<div class="info">
+			<ul class="info__titulo" id="foot"><h3>Información</h3>
+				<a id="foot__1" href="https://goo.gl/maps/EHmgbZBR3xz4XitT6" target="_blank"><li id="foot__2">¿Donde estamos?</li></a>
+				<a id="foot__1" href="http://www.correoargentino.com.ar" target="_blank"><li id="foot__2">Rastreá tu pedido</li></a>
+			</ul>
+		</div>
+		<div class="news">
+			<ul class="news__titulo" id="foot"><h3>Suscribite!!</h3>
+				<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
+				<li><input class="form-control" type="email" name="email" placeholder="Tu Email"></li>
+				<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+			</ul>
+		</div>
+		<div class="social">
+			<ul class="social__titulo" id="foot"><h3>Redes</h3>
+				<li><a href="http://instagram.com" target="_blank"><img id="icono" src="../img/insta.png" width="25px" height="25px" alt="Instagram"></a></li>
+				<li><a href="https://wa.me/+5491154720107" target="_blank"><img id="icono" src="../img/wa2.png" width="25px" height="25px" alt="Whatsapp"></a></li>
+				<li><a href="http://facebook.com" target="_blank"><img id="icono" src="../img/face.png" alt="Facebook" width="25px" height="25px"></a></li>
+			</ul>
+		</div>	
+	</footer>
 </body>
 </html>

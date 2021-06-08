@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -6,7 +7,8 @@
 }
 
 body {
-  background-image: repeating-linear-gradient(to left top, #F9E547, #F9E547 50px, #939597, #939597 250px, #F9E547, #F9E547 100px, white, white 300px);
+  background-image: url(../img/backround.jpg);
+  background-repeat: repeat;
 }
 
 /*-------------PaginaPrincipal-----------------*/
@@ -26,7 +28,7 @@ header .ubicacion__titulo {
 header .titulo {
   color: #F9E547;
   text-align: center;
-  font-size: 65px;
+  font-size: 80px;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -62,31 +64,15 @@ aside .pIndex {
   text-align: center;
 }
 
-.pie__tabla {
-  color: black;
+.pie {
+  padding: 14px 20px 0px 20px;
+}
+
+.pie .pie__tabla {
+  color: white;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   font-weight: bolder;
-}
-
-.extra {
-  width: 100%;
-  height: 150px;
-}
-
-.extra .extras {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.extra .extras__botones__links:link, .extra .extras__botones__links:visited, .extra .extras__botones__links:active {
-  text-decoration: none;
-  color: black;
-  text-transform: uppercase;
 }
 
 /*-------------------MenuPrincipal-----------------*/
@@ -154,21 +140,233 @@ aside .pIndex {
 }
 
 /*--------------------Formulario----------------------*/
-.formulario {
-  position: relative;
-  width: 300px;
-  height: 398px;
-  margin: 0 auto;
+.containerF, .formulario__gift {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.formulario .formulario__borde {
+.containerF .mapa, .formulario__gift .mapa {
+  margin-top: 40px;
+}
+
+.containerF .formulario, .formulario__gift .formulario {
+  width: 300px;
+  height: 398px;
+  margin: 30px;
+}
+
+.containerF .formulario .formulario__borde, .formulario__gift .formulario .formulario__borde {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
   font-size: 30px;
+  color: black;
 }
 
-.formulario .formulario__borde__item {
+.containerF .formulario .formulario__borde__item, .formulario__gift .formulario .formulario__borde__item {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
+  color: black;
+}
+
+.containerF .formulario .formulario__borde__item__botones, .formulario__gift .formulario .formulario__borde__item__botones {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.52)), to(rgba(248, 235, 47, 0.945))), url("../img/footer.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(248, 235, 47, 0.945)), url("../img/footer.jpg");
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 150px;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer #foot {
+  list-style: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.footer #foot #foot__1:link, .footer #foot #foot__1:visited, .footer #foot #foot__1:active {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.footer #foot #foot__2:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer #icono:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__gift {
+  margin-top: 200px;
+}
+
+/*--------------------GALERIA GRID-----------------*/
+.accesorios, .preta, .alta {
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  -ms-grid-rows: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+  grid-gap: 1rem;
+  border-radius: 2px;
+}
+
+.accesorios img, .preta img, .alta img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.accesorios img:hover, .preta img:hover, .alta img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.accesorios .accesorios1, .accesorios .preta1, .accesorios .alta1, .preta .accesorios1, .preta .preta1, .preta .alta1, .alta .accesorios1, .alta .preta1, .alta .alta1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+}
+
+.accesorios .accesorios2, .accesorios .preta2, .accesorios .alta2, .preta .accesorios2, .preta .preta2, .preta .alta2, .alta .accesorios2, .alta .preta2, .alta .alta2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+.accesorios .accesorios3, .accesorios .preta3, .accesorios .alta3, .preta .accesorios3, .preta .preta3, .preta .alta3, .alta .accesorios3, .alta .preta3, .alta .alta3 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
+}
+
+.accesorios .accesorios4, .accesorios .preta4, .accesorios .alta4, .preta .accesorios4, .preta .preta4, .preta .alta4, .alta .accesorios4, .alta .preta4, .alta .alta4 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / 5;
+}
+
+@media only screen and (min-width: 480px) {
+  .accesorios, .preta, .alta {
+    -ms-grid-columns: 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px;
+    -ms-grid-rows: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .accesorios, .preta, .alta {
+    -ms-grid-columns: 150px 150px 150px 150px;
+        grid-template-columns: 150px 150px 150px 150px;
+    -ms-grid-rows: 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .accesorios, .preta, .alta {
+    -ms-grid-columns: 200px 200px 200px 200px;
+        grid-template-columns: 200px 200px 200px 200px;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+  }
+}
+
+/*----------------Gift-Card-------------*/
+.elige {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.check {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.gift {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/*-----------------Técnicas-------------------*/
+.galeria__tecnicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.galeria__tecnicas .galeria__tecnicas__contenedor {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+  font-weight: bolder;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 133, 134, 0.52)), to(rgba(247, 246, 243, 0.945))), url("../img/footer.jpg");
+  background-image: linear-gradient(to bottom, rgba(133, 133, 134, 0.52), rgba(247, 246, 243, 0.945)), url("../img/footer.jpg");
 }
 /*# sourceMappingURL=estilos.css.map */
