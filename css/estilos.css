@@ -435,6 +435,10 @@ aside .pIndex1 .pIndex {
   header .titulo {
     font-size: 50px;
   }
+  .containerF .mapa {
+    height: 250px;
+    width: 350px;
+  }
 }
 
 @media only screen and (min-width: 425px) {
