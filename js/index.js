@@ -1,7 +1,7 @@
 var hola = prompt("Hola Fashionista =), ¿Podrías decirnos tu nombre?.");
 var edad = parseInt(prompt("Ahora si te podemos saludar correctamente, Hola "+hola+" , cuéntanos cuantos años tienes."));
 var sexo = prompt("Genial!!!, ya sabemos que te llamas "+hola+" y que tienes "+edad+" años, por último indicanos tu sexo, M para masculino, F para femenino o si no lo quieres aclarar deja el espacio en blanco.");
-var gracias = prompt("Gracias por tu tiempo ,"+hola+" y por visitar nuestro sitio.")
+var gracias = alert("Gracias por tu tiempo ,"+hola+" y por visitar nuestro sitio.")
 var bSexo = (sexo == "M") || (sexo == "F") || (sexo == "m") || (sexo == "f");
 var nSexo = (sexo == "");
 var condDatos = bSexo;
