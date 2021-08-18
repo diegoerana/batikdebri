@@ -28,7 +28,7 @@
 				<a class="nav-item nav-link active menu__links" href="../index.html">Home</a>
 	   			<a class="nav-item nav-link menu__links" href="armario.html">Nuestro-Armario</a>
 	  			<a class="nav-item nav-link menu__links" href="tecnicas.html">Técnicas</a>
-	   			<a class="nav-item nav-link menu__links" href="gift.html">Gift-Card</a>
+	   			<a class="nav-item nav-link menu__links" href="shop.html">DIY BY US</a>
 	   			<a class="nav-item nav-link menu__links" href="contact.html">Contacto</a>
 	   			<audio class="center-block" src="../audio/Monkey Warhol - Lunar Phases.mp3" controls="1" loop="1"></audio>
 			 </div>
@@ -99,9 +99,11 @@
 		</div>
 		<div class="news">
 			<ul class="news__titulo" id="foot"><h3>Suscribite!!</h3>
-				<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
-				<li><input class="form-control" type="email" name="email" placeholder="Tu Email"></li>
-				<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				<form id="form__news1">
+					<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
+					<li><input class="form-control" type="email" id="pMail" name="pMail" placeholder="Tu Email"></li>
+					<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				</form>
 			</ul>
 		</div>
 		<div class="social">
@@ -110,7 +112,9 @@
 				<li><a href="https://wa.me/+5491154720107" target="_blank"><img id="icono" src="../img/wa2.png" width="25px" height="25px" alt="Whatsapp"></a></li>
 				<li><a href="http://facebook.com" target="_blank"><img id="icono" src="../img/face.png" alt="Facebook" width="25px" height="25px"></a></li>
 			</ul>
+			<div id="listoFooter" class="gracias"></div>
 		</div>	
 	</footer>
+	<script src="../js/footer.js"></script>
 </body>
 </html>

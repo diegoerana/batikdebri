@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -28,7 +29,7 @@
 				<a class="nav-item nav-link active menu__links" href="../index.html">Home</a>
 	   			<a class="nav-item nav-link menu__links" href="otoño.html">Otoño-Invierno</a>
 	   			<a class="nav-item nav-link menu__links" href="armario.html">Nuestro-Armario</a>
-	   			<a class="nav-item nav-link menu__links" href="gift.html">Gift-Card</a>
+	   			<a class="nav-item nav-link menu__links" href="shop.html">DIY BY US</a>
 	   			<a class="nav-item nav-link menu__links" href="contact.html">Contacto</a>
 	   			<audio class="center-block" src="../audio/Monkey Warhol - Lunar Phases.mp3" controls="1" loop="1"></audio>
 			 </div>
@@ -72,7 +73,6 @@
 		</div>
 	</div>    
 	
-	
 	<footer class="footer">
 		<div class="accesos">
 			<ul class="accesos__titulo" id="foot"><h3>Accesos Rapidos</h3>
@@ -90,9 +90,11 @@
 		</div>
 		<div class="news">
 			<ul class="news__titulo" id="foot"><h3>Suscribite!!</h3>
-				<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
-				<li><input class="form-control" type="email" name="email" placeholder="Tu Email"></li>
-				<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				<form id="form__news1">
+					<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
+					<li><input class="form-control" type="email" id="pMail" name="pMail" placeholder="Tu Email"></li>
+					<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				</form>
 			</ul>
 		</div>
 		<div class="social">
@@ -101,7 +103,9 @@
 				<li><a href="https://wa.me/+5491154720107" target="_blank"><img id="icono" src="../img/wa2.png" width="25px" height="25px" alt="Whatsapp"></a></li>
 				<li><a href="http://facebook.com" target="_blank"><img id="icono" src="../img/face.png" alt="Facebook" width="25px" height="25px"></a></li>
 			</ul>
+			<div id="listoFooter" class="gracias"></div>
 		</div>	
 	</footer>
+	<script src="../js/footer.js"></script>
 </body>
 </html>

@@ -29,8 +29,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="/js/jquery-3.6.0.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -52,7 +53,7 @@
 	   			<a class="nav-item nav-link menu__links" href="pages/otoño.html">Otoño-Invierno</a>
 	   			<a class="nav-item nav-link menu__links" href="pages/armario.html">Nuestro-Armario</a>
 	  			<a class="nav-item nav-link menu__links" href="pages/tecnicas.html">Técnicas</a>
-	   			<a class="nav-item nav-link menu__links" href="pages/gift.html">Gift-Card</a>
+	   			<a class="nav-item nav-link menu__links" href="pages/shop.html">DIY BY US</a>
 	   			<a class="nav-item nav-link menu__links" href="pages/contact.html">Contacto</a>
 	   			<audio class="center-block" src="audio/Monkey Warhol - Lunar Phases.mp3" controls="1" loop="1"></audio>
 			 </div>
@@ -149,9 +150,11 @@
 		</div>
 		<div class="news">
 			<ul class="news__titulo" id="foot"><h3>Suscribite!!</h3>
-				<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
-				<li><input class="form-control" type="email" name="email" placeholder="Tu Email"></li>
-				<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				<form id="form__news1">
+					<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
+					<li><input class="form-control" type="email" id="pMail" name="pMail" placeholder="Tu Email"></li>
+					<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				</form>
 			</ul>
 		</div>
 		<div class="social">
@@ -160,8 +163,32 @@
 				<li><a href="https://wa.me/+5491154720107" target="_blank"><img id="icono" src="img/wa2.png" width="25px" height="25px" alt="Whatsapp"></a></li>
 				<li><a href="http://facebook.com" target="_blank"><img id="icono" src="img/face.png" alt="Facebook" width="25px" height="25px"></a></li>
 			</ul>
-		</div>	
+			<div id="listoFooter" class="gracias"></div>
+		</div>
 	</footer>
-	<script src="https://github.com/diegoerana/batikdebri/blob/master/js/index.js"></script>
+	<div class="contenedor_newsletter">
+		<div class="news__contenedor" id="news__contenedor">
+			<div class="modal1" id="modal1">>
+				<button class="close-btn" id="close"><i class="fa fa-times"></i></button>
+				<div class="modal1-contentido">
+					<div class="news__titulo">
+						<h2 class="logo">Batik de Bri</h2>
+						<p class="tagline">Decolorando la Moda</p>
+						<p class="tagline">Si querés recibir nuestras novedades y promociones suscríbete a nuestro Newsletter.</p>
+					</div>
+					<form id="form__news">
+						<input class="inputNews" type="email" placeholder="Tu Email" id="pMail" name="pMail">
+						<input type="submit" value="ENVIAR" class="btn btn-dark">
+					</form>
+					<div class="social-media">
+						<a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://wa.me/+5491154720107" target="_blank"><i class="fab fa-whatsapp"></i></a>
+					</div>
+					<div id="genial" class="menu"></div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<script src="/js/newsletter.js"></script>
 </body>
 </html>

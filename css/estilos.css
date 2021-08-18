@@ -217,18 +217,18 @@ aside .pIndex1 .pIndex {
           box-sizing: border-box;
 }
 
-.footer #foot {
+.footer #foot, .footer .gracias {
   list-style: none;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.footer #foot #foot__1:link, .footer #foot #foot__1:visited, .footer #foot #foot__1:active {
+.footer #foot #foot__1:link, .footer #foot #foot__1:visited, .footer #foot #foot__1:active, .footer .gracias #foot__1:link, .footer .gracias #foot__1:visited, .footer .gracias #foot__1:active {
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
 
-.footer #foot #foot__2:hover {
+.footer #foot #foot__2:hover, .footer .gracias #foot__2:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   -webkit-transition: 1s;
@@ -300,55 +300,6 @@ aside .pIndex1 .pIndex {
   grid-column: 3 / 5;
 }
 
-/*----------------Gift-Card-------------*/
-.elige {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
-}
-
-.check {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}
-
-.gift {
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.gift .img__gift {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
 /*-----------------Técnicas-------------------*/
 .galeria__tecnicas {
   display: -webkit-box;
@@ -372,6 +323,233 @@ aside .pIndex1 .pIndex {
   font-weight: bolder;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 133, 134, 0.52)), to(rgba(247, 246, 243, 0.945))), url("../img/footer.jpg");
   background-image: linear-gradient(to bottom, rgba(133, 133, 134, 0.52), rgba(247, 246, 243, 0.945)), url("../img/footer.jpg");
+}
+
+/*---------------Newsletter-----------*/
+.news__contenedor {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+}
+
+.modal1 {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.52)), to(rgba(0, 0, 47, 0.945))), url("../img/footer.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 47, 0.945)), url("../img/footer.jpg");
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 500px;
+  height: 350px;
+}
+
+.modal1-contenido {
+  padding: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.news__titulo {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 35px;
+  color: black;
+}
+
+.tagline {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.inputNews[type=text] {
+  padding: 8px;
+  outline: none;
+  border: 3px solid white;
+  background-color: grey;
+  color: white;
+}
+
+#form__news {
+  padding-left: 120px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+::-ms-input-placeholder {
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.suscribe {
+  padding: 11px;
+  text-transform: uppercase;
+  background-color: white;
+  outline: none;
+  border: none;
+  color: rgba(0, 0, 47, 0.945);
+  font-weight: 700;
+}
+
+.social-media i {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.close-btn {
+  background: transparent;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  outline: none;
+  border: none;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+/*------------------DIY US--------------------*/
+.asideShop div p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #010e1a;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.asideShop .datos1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  color: black;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: none;
+}
+
+.asideShop div .datos {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #010e1a;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+div .elige {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #010e1a;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.opciones {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #010e1a;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#divRemera {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #010e1a;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: none;
+}
+
+#divRemera .divRemeraTitulo {
+  font-size: 50px;
+}
+
+#divBuzo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 25px;
+  color: #010e1a;
+  width: auto;
+  height: auto;
+  text-align: center;
+  display: none;
+  font-weight: bolder;
+}
+
+#divBuzo .divBuzoTitulo {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.remeraYbuzo {
+  font-weight: bolder;
+}
+
+.elige {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
 }
 
 /*------------------Responsive-----------------*/

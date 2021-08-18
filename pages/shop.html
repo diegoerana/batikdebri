@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DYE by Us</title>
+	<meta name="description" content="Descubrí como trabajamos, nuestras técnicas, pigmentos, y mucha magia">
+	<meta name="keywords" content="MODA, COLORES, FASHION, BATIK, TIE DYE, ROPA, TEÑIDO,TÉCNICAS">
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__titulo animate__animated animate__backInDown">DIY BY US</h1>
+	</header>
+	<nav class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	   		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active menu__links" href="../index.html">Home</a>
+	   			<a class="nav-item nav-link menu__links" href="otoño.html">Otoño-Invierno</a>
+	   			<a class="nav-item nav-link menu__links" href="armario.html">Nuestro-Armario</a>
+	   			<a class="nav-item nav-link menu__links" href="tecnicas.html">Técnicas</a>
+	   			<a class="nav-item nav-link menu__links" href="contact.html">Contacto</a>
+	   			<audio class="center-block" src="../audio/Monkey Warhol - Lunar Phases.mp3" controls="1" loop="1"></audio>
+			 </div>
+		</div>
+	</nav>
+    <br>
+	<div class="elige"><p> Con este simulador podrás crear tu propia remera o buzo para que nosotros te lo hagamos.</p>		
+	</div>
+	<br>
+    <br>
+    <aside class="asideShop">
+        <div>
+            <form class="datos" id="form">
+                <label for="pNombre">Ingresa tu nombre.</label>
+                <input type="text" name="pNombre" id="pNombre">   
+                <label for="pEdad">Ingresa tu edad.</label>
+                <input type="number" name="pEdad" id="pEdad">
+                <label for="pMail">Ingresa tu Mail.</label>
+                <input type="email" name="pMail" id="pMail">
+                <input class="btn btn-dark" type="submit" value="Logueate!">
+            </form>
+        </div>
+        <div id="datos" class="datos1"></div>
+    </aside>
+
+    <br>
+    <br>
+
+    <div class="div__elige">
+        <h1 class="elige">Tu eliges, ¿REMERA O BUZO?</h1>
+    </div>
+    <br>
+    <br>
+    <div class="opciones">
+        <div class="remera">
+            <h2 class="remeraYbuzo">Remeras</h2>
+            <form action="" id="formRemera">
+                <p>
+                    <label>Selecciona Talle</label>
+                    <select class="form-control-lg" name="talle" id="talleRemera" onchange="mostrarTalle();">
+                        <option value="">...</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Selecciona un Color</label>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                        <input type="checkbox" value="Negro" id="pColorNegro" onchange="remeraNegra();">
+                        <div style="width: 50px; height: 50px; background: black;"></div>
+                        <input type="checkbox" class="checkBlanco" value="Blanco" id="pColorBlanco" onchange="remeraBlanca();">
+                        <div style="width: 50px; height: 50px; background: white;"></div>
+                        <input type="checkbox" class="checkBatik" value="Batik" id="pColorBatik" onchange="remeraBatik();">
+                        <div style="background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); width: 50px; height: 50px;"></div>
+                    </div>
+                </p>
+                <p>
+                    <label>Selecciona Estampa</label>
+                    <select class="form-control-lg" name="estampa" id="pEstampa" onchange="mostrarEstampa();">
+                        <option value="...">...</option>
+                        <option value="Música">Música</option>
+                        <option value="Deportes">Deportes</option>
+                        <option value="Arte">Arte</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Elige diseño</label>
+                    <select class="form-control-lg" name="mangas" id="pMangas" onchange="mostrarDiseño();">
+                        <option value="...">...</option>
+                        <option value="Mangas Cortas">Mangas Cortas</option>
+                        <option value="Mangas Largas">Mangas Largas</option>
+                    </select>
+                </p>
+                <input class="btn btn-dark" id="crear-remera" type="submit" value="Crear Remera"></input>
+                <input class="btn btn-dark" type="reset" value="Reset"></input>
+            </form>
+        </div>
+    
+        <div class="buzo">
+            <h2 class="remeraYbuzo">Buzos</h2>
+            <form action="" id="formBuzo">
+                <p>
+                    <label>Selecciona Talle</label>
+                    <select class="form-control-lg" name="talle" id="pTalleBuzo" onchange="mostrarTalleBuzo();">
+                        <option value="...">...</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Selecciona Color</label>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                        <input type="checkbox" value="Negro" id="pColorNegroBuzo" onchange="buzoNegro();">
+                        <div style="width: 50px; height: 50px; background: black;"></div>
+                        <input type="checkbox" class="checkBlanco" value="Blanco" id="pColorBlancoBuzo" onchange="buzoBlanco();">
+                        <div style="width: 50px; height: 50px; background: white;"></div>
+                        <input type="checkbox" class="checkBatik" value="Batik" id="pColorBatikBuzo" onchange="buzoBatik();">
+                        <div style="background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); width: 50px; height: 50px;"></div>
+                    </div>
+                </p>
+                <p>
+                    <label>Selecciona Estampa</label>
+                    <select class="form-control-lg" name="estampa" id="pEstampaBuzo" onchange="mostrarEstampaBuzo();">
+                        <option value="...">...</option>
+                        <option value="Música">Música</option>
+                        <option value="Deportes">Deportes</option>
+                        <option value="Arte">Arte</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Elige diseño</label>
+                    <select class="form-control-lg" name="diseñoB" id="diseñoBuzo" onchange="mostrarDiseñoBuzo();">
+                        <option value="...">...</option>
+                        <option value="Canguro">Canguro</option>
+                        <option value="Clásico">Clasico</option>
+                    </select>
+                </p>
+                <input class="btn btn-dark" id="crear-buzo" type="submit" value="Crear Buzo"></input>
+                <input class="btn btn-dark" type="reset" value="Reset"></input>
+            </form>
+        </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <script src="../js/usuario.js"></script>
+    <script src="../js/creador.js"></script>
+</body>
+</html>

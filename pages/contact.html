@@ -28,7 +28,7 @@
 				<a class="nav-item nav-link active menu__links" href="../index.html">Home</a>
 	   			<a class="nav-item nav-link menu__links" href="armario.html">Nuestro-Armario</a>
 	  			<a class="nav-item nav-link menu__links" href="tecnicas.html">Técnicas</a>
-	   			<a class="nav-item nav-link menu__links" href="gift.html">Gift-Card</a>
+	   			<a class="nav-item nav-link menu__links" href="shop.html">DIY BY US</a>
 				<a class="nav-item nav-link menu__links" href="contact.html">Contacto</a>
 	   			<audio class="center-block" src="../audio/Monkey Warhol - Lunar Phases.mp3" controls="1" loop="1"></audio>
 			 </div>
@@ -41,33 +41,36 @@
 		!1s0x95a32cc97bf001a9%3A0x386c9536e6e978ec!2sLuis%20Piedra%20Buena%203075%2C%20B1845CUL%20Jos
 		%C3%A9%20Marmol%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1622757743530!5m2!
 		1ses-419!2sar" width="450" height="550" style="border: 1;" allowfullscreen="1" loading="lazy"></iframe>
-		<form class="formulario">
+		<form class="formulario" id="formContacto">
 			<fieldset>
 				<legend class="formulario__borde" align="center">Formulario de Contacto</legend>
 					<p class="formulario__borde__item">
 						<label form="Nombre">Nombres y Apellido</label>
-						<input class="form-control" type="text" name="Nombre">
+						<input class="form-control" type="text" id="pNombreApellido" name="pNombreApellido">
 					</p>
 					<p class="formulario__borde__item">
 						<label form="email">Email</label>
-						<input class="form-control" type="email" name="email">
+						<input class="form-control" type="email" id="pMailContacto" name="pMailContacto">
 					</p>
 					<p class="formulario__borde__item">
 						<label>¿Como nos conociste?</label>
-						<select class="form-control" name="Información">
-							<option value="R">Recomendación</option>
-							<option value="S">Redes Sociales</option>
-							<option value="T">Publicidad en Tv</option>
-							<option value="M">Algún medio gráfico</option>
+						<select class="form-control" id="pConociste" name="pConociste">
+							<option value="Recomendación">Recomendación</option>
+							<option value="Redes Sociales">Redes Sociales</option>
+							<option value="Publicidad en Tv">Publicidad en Tv</option>
+							<option value="Algún medio gráfico">Algún medio gráfico</option>
 						</select>
 					</p>
 					<p class="formulario__borde__item">
 						<label>¿Querés recibir nuestras novedades y ofertas?</label>
-						<input type="checkbox" name="acepta" value="1">
+						<select class="form-control" name="pNews" id="pNews">
+							<option value="Si">SI</option>
+							<option value="NO">NO</option>
+						</select>
 					</p>
 					<p class="formulario__borde__item">
 						<p class="formulario__borde__item">Dejá tu consulta o comentario aquí. ↓↓↓</p>
-						<textarea name="texarea" id="" cols="40" rows="4"></textarea>
+						<textarea name="pComent" id="pComent" cols="40" rows="4"></textarea>
 					</p>
 					<p class="formulario__borde__item__botones">
 						<input class="btn btn-dark" type="submit">
@@ -93,9 +96,11 @@
 		</div>
 		<div class="news">
 			<ul class="news__titulo" id="foot"><h3>Suscribite!!</h3>
-				<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
-				<li><input class="form-control" type="email" name="email" placeholder="Tu Email"></li>
-				<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				<form id="form__news1">
+					<li>Suscribite a nuestras novedades para enterarte de lo último.</li>
+					<li><input class="form-control" type="email" id="pMail" name="pMail" placeholder="Tu Email"></li>
+					<li><input type="submit" value="ENVIAR" class="btn btn-dark"></li>
+				</form>
 			</ul>
 		</div>
 		<div class="social">
@@ -104,7 +109,11 @@
 				<li><a href="https://wa.me/+5491154720107" target="_blank"><img id="icono" src="../img/wa2.png" width="25px" height="25px" alt="Whatsapp"></a></li>
 				<li><a href="http://facebook.com" target="_blank"><img id="icono" src="../img/face.png" alt="Facebook" width="25px" height="25px"></a></li>
 			</ul>
+			<div id="listoFooter" class="gracias"></div>
 		</div>	
 	</footer>
+	<script src="../js/footer.js"></script>
+	<script src="../js/jquery-3.6.0.js"></script>
+	<script src="../js/contacto.js"></script>
 </body>
 </html>
